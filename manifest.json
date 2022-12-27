@@ -1,0 +1,33 @@
+{
+    "name": "Tamu Professor Info",
+    "description": "",
+    "version": "0.1.0",
+    "permissions": [
+        "tabs",
+        "cookies",
+        "storage",
+        "webNavigation",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions" : ["https://*.collegescheduler.com/*"],
+    "content_scripts": [
+        {
+            "matches": ["https://*.collegescheduler.com/*"],
+            "run_at": "document_end",
+            "js": ["maker.js"]
+        }
+    ],
+    "background": {
+        "service_worker": "webChecker.js"
+    },
+    "action": {
+        "default_icon": {
+            "16": "tamu.png",
+            "24": "tamu.png",
+            "32": "tamu.png"
+        },
+        "default_title": "Testing"
+    },
+    "manifest_version": 3
+}
