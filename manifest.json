@@ -23,9 +23,9 @@
     },
     "action": {
         "default_icon": {
-            "16": "tamu.png",
-            "24": "tamu.png",
-            "32": "tamu.png"
+            "16": "AMRMP.png",
+            "24": "AMRMP.png",
+            "32": "AMRMP.png"
         },
         "default_title": "Testing"
     },
